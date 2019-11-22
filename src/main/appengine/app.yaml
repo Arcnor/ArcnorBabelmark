@@ -1,0 +1,5 @@
+runtime: java11
+instance_class: F1
+automatic_scaling:
+  max_instances: 1
+entrypoint: 'java -XX:MaxRAM=128m -XX:ActiveProcessorCount=2 -Xmx32m -Dquarkus.log.file.enable=false -Dquarkus.http.host=0.0.0.0 -jar server-quarkus-0.1.0-SNAPSHOT-runner.jar'
